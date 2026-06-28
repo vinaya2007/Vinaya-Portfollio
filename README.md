@@ -1,7 +1,5 @@
 <div align="center">
 
-<img src="https://vinaya-portfollio.vercel.app/assets/images/me2.jpeg" width="130" style="border-radius:50%" alt="Vinaya V"/>
-
 # Hi there, I'm Vinaya V 👋
 
 ### AI Enthusiast • Full Stack Developer • Open Source Contributor
