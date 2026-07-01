@@ -61,18 +61,8 @@ new Typed(".typing", {
 });
 
 /*==========================================
-        CUSTOM CURSOR
+        CUSTOM CURSOR (disabled — using native cursor)
 ==========================================*/
-
-const cursor = document.querySelector(".cursor");
-
-document.addEventListener("mousemove", (e) => {
-
-    cursor.style.left = e.clientX + "px";
-
-    cursor.style.top = e.clientY + "px";
-
-});
 
 /*==========================================
         SCROLL PROGRESS BAR
@@ -166,7 +156,7 @@ document.querySelectorAll('a[href^="#"]')
 
 VanillaTilt.init(
 
-    document.querySelectorAll(".hero-image"),
+    document.querySelectorAll(".hero-panel"),
 
 {
 
@@ -338,42 +328,8 @@ window.addEventListener("scroll",()=>{
 
 
 /*==========================================
-        BUTTON RIPPLE EFFECT
+        BUTTON RIPPLE EFFECT (disabled — was causing visual glitch)
 ==========================================*/
-
-const buttons = document.querySelectorAll(".btn");
-
-buttons.forEach(button=>{
-
-button.addEventListener("click",function(e){
-
-const ripple=document.createElement("span");
-
-const rect=this.getBoundingClientRect();
-
-const size=Math.max(rect.width,rect.height);
-
-ripple.style.width=size+"px";
-
-ripple.style.height=size+"px";
-
-ripple.style.left=e.clientX-rect.left-size/2+"px";
-
-ripple.style.top=e.clientY-rect.top-size/2+"px";
-
-ripple.classList.add("ripple");
-
-this.appendChild(ripple);
-
-setTimeout(()=>{
-
-ripple.remove();
-
-},600);
-
-});
-
-});
 
 
 /*==========================================
@@ -465,7 +421,7 @@ item.style.transform=
         EMAIL JS — CHANGE 3: Activated
 ==========================================*/
 
-emailjs.init("YOUR_PUBLIC_KEY"); /* Replace with your EmailJS public key */
+emailjs.init("bfiY1iIXkPc2o1m8Y"); /* Replace with your EmailJS public key */
 
 (function(){
 
